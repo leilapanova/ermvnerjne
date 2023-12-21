@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for el in order %}
+    {{ el.product }}
+    {{ el.quanity }}
+    {{ el.price }}
+    <button><a href="{% url 'create' %}">Оформить заказ</a> </button>
+{% endfor %}
+</body>
+</html>

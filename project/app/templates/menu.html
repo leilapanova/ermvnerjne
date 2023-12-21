@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>меню</title>
+</head>
+<body>
+    {% for el in eat %}
+        {{ el.title }}
+        {{ el.about }}
+        {{ el.category }}
+        {{ el.price }}
+        {{ el.product }}
+        {{ el.quanity }}
+    <hr>
+    {% endfor %}
+    <button><a href="{% url 'create' %}">Сделать заказ</a> </button>
+    <button><a href="{% url 'order' %}">мои заказы</a></button>
+</body>
+</html>
